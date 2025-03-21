@@ -47,6 +47,7 @@ export default function Header({toggleSidebar}){
             className="pl-[52px] w-[100%]"
             aria-label="search for products"
           />
+          
           <img
             src={searchIcon}
             alt=" search icon"
