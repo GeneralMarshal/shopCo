@@ -8,7 +8,7 @@ import menuIcon from "../assets/icons/menuIcon.svg"
 
 export default function Header({toggleSidebar}){
     return (
-      <nav className="relative flex w-full flex-wrap items-center justify-between md:justify-center  lg:pl-[150px] lg:pr-[30px] px-[16px] h-[96px] gap-[40px] ">
+      <nav className="relative flex w-full flex-wrap items-center justify-between md:justify-center  lg:pl-[100px] lg:pr-[30px] px-[16px] h-[64px] md:h-[96px] gap-[20px] lg:gap-[40px] ">
         
         {/* menu icon for smaller screens */}
         <div className=" flex gap-[18px]">
@@ -16,7 +16,7 @@ export default function Header({toggleSidebar}){
             <img src={menuIcon} alt="menu icon" />
           </button>
 
-          <a href="" className=" text-xl font-extrabold">
+          <a href="" className=" text-2xl lg:text-4xl font-extrabold">
             SHOP.CO
           </a>
         </div>
@@ -24,23 +24,23 @@ export default function Header({toggleSidebar}){
         {/* nav properties which is in the sidebar for smaller screen */}
 
         <ul className=" hidden md:flex relative w-[auto] items-center gap-[20px]">
-          <li className="flex text-sm gap-[5px]">
+          <li className="flex text-md gap-[5px]">
             <a href="">Shop</a>
             <img src={down_arrow} alt="" />
           </li>
-          <li className=" text-sm">
+          <li className=" text-md">
             <a href="">On Sale</a>
           </li>
-          <li className=" text-sm">
+          <li className=" text-md">
             <a href="">New Arrivals</a>
           </li>
-          <li className=" text-sm">
+          <li className=" text-md">
             <a href="">Brands</a>
           </li>
         </ul>
 
         {/* search bar */}
-        <div className="relative hidden md:flex md:flex-1 bg-gray-200 rounded-[62px] max-w-[500px] h-[48px] shadow-md">
+        <div className="relative hidden md:flex md:flex-1 bg-gray-200 rounded-[62px] max-w-[500px] h-[48px] shadow-xl">
           <input
             type="text"
             placeholder="Search for products... "
