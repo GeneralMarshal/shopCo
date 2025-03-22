@@ -9,10 +9,10 @@ import ProductCard from "../components/ProductCard.jsx";
 export default function Home() {
   return (
     <>
+      <PromoBanner />
       <Layout>
-        <PromoBanner />
         <Banner />
-        <ProductCard/>
+        <ProductCard />
       </Layout>
     </>
   );
